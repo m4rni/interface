@@ -1,0 +1,37 @@
+Interface adalah sebuah tipe referensi pada java. Secara Struktur hampir sama dengan class. Ada beberapa aturan dalam penulisan interface :
+
+    1. Modifier method hanya boleh public, abstract atau default
+    2. Pada class yang mengimplement, modifier method - method hanya boleh public 
+    3. Jumlah parameter method interface harus sama dengan class yang mengimplemetnya 
+	   (Pas kita override pasti langsung sama parameternya, jangan diganti!)
+    4. Tidak boleh ada method concrete di interface. Maksudnya begini, jika kita menambahkan method 
+	    seperti ini public void output(){System.out.println();},maka akan error.
+    5. Tidak boleh ada constructor
+    6.Interface tidak bisa di instanisasi, TAPI bisa di instanisasi melalui class yang meng implementnya
+	 
+	 
+	 PENJELASAN
+
+     1. Modifier method hanya boleh public, abstract atau default
+     2. Method Pada class yang mengimplement, modifier method - method hanya boleh public
+
+       Jika meng implement suatu interface, otomatis semua method di interface tersebut
+	   harus di Override dan modifier methodnya harus public.  Jika tidak akan terjadi error. 
+	 3. Jumlah parameter method yang ada di interface dengan class yang mengimplementasikannya harus sama
+
+       Ketika mengimplementasi sebuah interface, maka harus mengimplent method-methodnya. 
+	   Dalam method yang di implementasi dari interface jangan pernah merubah nama method maupun parameter methodnya, 
+	   jika tidak akan terjadi error.
+	   
+	 4. Tidak boleh ada method concrete di Interface
+	 
+	    Method concrete artinya, method yang sudah ada isinya. 
+		Jika abstract adalah method yang akan kita difinisikan isinya diclass yang mengimplemetnya, 
+		sedangkan methdo concrete sudah ada isinya, terdefinisikan.
+		
+	 5. Tidak boleh ada Constructor
+	    Suatu interface tidak boleh ada contructor. Jika  dipaksakan adanya constructor, maka akan terjadi error di interface
+		
+     6. Interface tidak bisa di instanisasikan, TAPI bisa di instanisasikan diclass yang mengimplements nya
+	 dengan syarat semua method yang ada di interface harus di implementasikan.
+
